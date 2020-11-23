@@ -1,0 +1,86 @@
+/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #9d50bb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6e48aa,
+    #9d50bb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6e48aa,
+    #9d50bb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background: #843dae; */
+  
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('./groot-dance.gif');
+  background-size: 40%;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-family: 'Goldman', cursive;
+  font-size: 20px;
+  color: white;
+  background: #48aa7e;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+audio::-webkit-media-controls-panel {
+  background: #AF623E; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #AF623E,
+    #975435
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #AF623E,
+    #975435
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background: #5C3D1F; */
+  color: #5C3D1F;
+  border-color: #5C3D1F;
+}
+
+/* Media Query: Phone */
+@media screen and (min-width: 200px) and (max-width: 599px){
+  .container {
+    background-size: 70%;
+    background-position: center bottom;
+    box-shadow: 8px 8px 40px 30px rgba(0, 0, 0, 0.8);
+  }
+}
+/* Media Query: Tablet */
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .container {
+    background-size: 30%;
+    background-position: left bottom;
+    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+  }
+}
