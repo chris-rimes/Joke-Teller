@@ -7,20 +7,7 @@ html {
 
 body {
   margin: 0;
-  background: #9d50bb; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #6e48aa,
-    #9d50bb
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #6e48aa,
-    #9d50bb
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  /* background: #843dae; */
-  
+  background: #F2E5E2;
 }
 
 .container {
@@ -30,9 +17,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('./groot-dance.gif');
-  background-size: 40%;
-  background-position: left bottom;
+  background: url('./qWp.gif');
+  background-size: contain;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
@@ -44,43 +31,35 @@ button {
   font-family: 'Goldman', cursive;
   font-size: 20px;
   color: white;
-  background: #48aa7e;
+  background: #FFAE3C;
   border: none;
   border-radius: 5px;
   box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
 }
 
-audio::-webkit-media-controls-panel {
-  background: #AF623E; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #AF623E,
-    #975435
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #AF623E,
-    #975435
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  /* background: #5C3D1F; */
-  color: #5C3D1F;
-  border-color: #5C3D1F;
+button:hover {
+  filter: brightness(95%);
 }
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
 
 /* Media Query: Phone */
-@media screen and (min-width: 200px) and (max-width: 599px){
+
+@media screen and (max-width: 1000px){
   .container {
-    background-size: 70%;
-    background-position: center bottom;
-    box-shadow: 8px 8px 40px 30px rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    background-position: center center;
   }
-}
-/* Media Query: Tablet */
-@media screen and (min-width: 600px) and (max-width: 1000px) {
-  .container {
-    background-size: 30%;
-    background-position: left bottom;
+  button {
     box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
   }
-}
+} 
+
